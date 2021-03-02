@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mysql -u root --password="admin" < Enron.sql
+
+id=$(mysql Enron -u root -p "admin" -se "SELECT * FROM user")
+
+echo id
